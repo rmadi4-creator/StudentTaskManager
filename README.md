@@ -69,7 +69,7 @@ app/src/main/java/com/example/studenttaskmanager/
 - JDK 17.
 - Android SDK 34.
 
-## 🚀 التشغيل
+## التشغيل
 
 1. افتح المشروع في Android Studio: `File > Open` واختر مجلد `StudentTaskManager`.
 2. انتظر حتى تنتهي Android Studio من مزامنة Gradle (Gradle Sync) — سيقوم تلقائيًا بتحميل نسخة Gradle المطلوبة إن لم تكن `gradle-wrapper.jar` موجودة.
@@ -91,38 +91,4 @@ app/src/main/java/com/example/studenttaskmanager/
 | `Cannot find implementation for AppDatabase` | نسيان معالج KSP | تأكد من وجود `id("com.google.devtools.ksp")` في `build.gradle.kts` |
 | `Room cannot verify the data integrity` | تغيير بنية الجدول بدون Migration | استخدم `fallbackToDestructiveMigration()` (مستخدم بالفعل) أو أضف Migration رسمية |
 | `FOREIGN KEY constraint failed` | محاولة إضافة Task بـ subjectId غير موجود | تأكد من إضافة مادة دراسية واحدة على الأقل قبل إضافة مهمة |
-| `IllegalStateException: Cannot access database on the main thread` | استدعاء DAO مباشرة بدون Coroutine | استخدم `viewModelScope.launch` أو `suspend fun` (مطبق بالفعل في المشروع) |
-
-## 📤 رفع المشروع على GitHub
-
-1. أنشئ مستودعًا جديدًا على GitHub (بدون README أو .gitignore عند الإنشاء، لأنها موجودة بالفعل هنا).
-2. من داخل مجلد المشروع نفّذ:
-   ```bash
-   git init
-   git add .
-   git commit -m "Initial commit: Student Task Manager with Room Database"
-   git branch -M main
-   git remote add origin https://github.com/USERNAME/student-task-manager.git
-   git push -u origin main
-   ```
-3. تأكد أن جميع الملفات ظهرت على GitHub (خصوصًا مجلدات `app/src`، `docs/ERD.dbml`، و `README.md`).
-4. انسخ رابط المستودع لتسليمه.
-
-## ✅ Checklist التسليم النهائي
-
-- [ ] فكرة المشروع محددة وواضحة
-- [ ] ERD مكتمل (`docs/ERD.dbml`)
-- [ ] Entities (`Subject.kt`, `Task.kt`)
-- [ ] DAOs (`SubjectDao.kt`, `TaskDao.kt`)
-- [ ] Database Class (`AppDatabase.kt`)
-- [ ] Repository (`SubjectRepository.kt`, `TaskRepository.kt`)
-- [ ] ViewModel (`SubjectViewModel.kt`, `TaskViewModel.kt`)
-- [ ] واجهة المستخدم (4 شاشات: Home, Add/Edit, Details, Subjects)
-- [ ] عمليات CRUD كاملة (إضافة / عرض / تعديل / حذف)
-- [ ] تم اختبار التطبيق على محاكي أو جهاز حقيقي
-- [ ] تم رفع المشروع على GitHub
-- [ ] README.md موجود وواضح
-
-## 📄 الترخيص
-
-مشروع أكاديمي لأغراض تعليمية.
+| `IllegalStateException: Cannot access database on the main thread` | استدعاء DAO مباشرة بدون Coroutine | استخدم `viewModelScope.launch` أو `suspend fun` (مطبق بالفعل في المشروع) |app/src`، `docs/ERD.dbml`، و `README.md`).
