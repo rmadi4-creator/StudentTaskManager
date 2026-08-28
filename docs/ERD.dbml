@@ -1,0 +1,23 @@
+// ============================================
+// ERD - Student Task Manager
+// يُستخدم مباشرة على الموقع: https://dbdiagram.io
+// ============================================
+
+Table subjects {
+  subjectId int [pk, increment]
+  subjectName varchar [not null]
+  subjectColor varchar [default: '#3F51B5']
+}
+
+Table tasks {
+  taskId int [pk, increment]
+  title varchar [not null]
+  description varchar
+  dueDate bigint [not null, note: 'Timestamp']
+  isCompleted boolean [default: false]
+  subjectId int [not null, ref: > subjects.subjectId]
+  createdAt bigint [not null, note: 'Timestamp']
+}
+
+// العلاقة: مادة واحدة (Subject) ترتبط بعدة مهام (Task) => One-to-Many
+// عند حذف Subject تُحذف المهام المرتبطة تلقائيًا (ON DELETE CASCADE)

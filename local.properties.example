@@ -1,0 +1,3 @@
+## أعد تسمية هذا الملف إلى local.properties وضع مسار Android SDK لديك
+## هذا الملف لا يُرفع إلى GitHub (موجود في .gitignore)
+sdk.dir=/path/to/your/Android/sdk

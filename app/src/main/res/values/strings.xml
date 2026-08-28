@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Student Task Manager</string>
+
+    <string name="home_title">مهامي الدراسية</string>
+    <string name="add_task">إضافة مهمة</string>
+    <string name="edit_task">تعديل المهمة</string>
+    <string name="task_details">تفاصيل المهمة</string>
+    <string name="manage_subjects">إدارة المواد</string>
+
+    <string name="hint_title">عنوان المهمة</string>
+    <string name="hint_description">الوصف (اختياري)</string>
+    <string name="hint_due_date">تاريخ الاستحقاق</string>
+    <string name="hint_subject">اختر المادة</string>
+    <string name="hint_subject_name">اسم المادة</string>
+
+    <string name="btn_save">حفظ</string>
+    <string name="btn_delete">حذف</string>
+    <string name="btn_edit">تعديل</string>
+    <string name="btn_add_subject">إضافة مادة</string>
+    <string name="btn_pick_date">اختيار تاريخ</string>
+
+    <string name="empty_tasks">لا توجد مهام بعد. اضغط + لإضافة مهمة جديدة</string>
+    <string name="empty_subjects">لا توجد مواد بعد. أضف مادة أولاً</string>
+    <string name="error_title_required">يرجى إدخال عنوان المهمة</string>
+    <string name="error_subject_required">يرجى اختيار مادة دراسية</string>
+    <string name="error_no_subjects">يجب إضافة مادة دراسية واحدة على الأقل قبل إضافة مهمة</string>
+    <string name="error_subject_name_required">يرجى إدخال اسم المادة</string>
+
+    <string name="confirm_delete_task">هل تريد حذف هذه المهمة؟</string>
+    <string name="confirm_delete_subject">حذف هذه المادة سيؤدي لحذف جميع مهامها المرتبطة. هل تريد المتابعة؟</string>
+    <string name="yes">نعم</string>
+    <string name="cancel">إلغاء</string>
+
+    <string name="status_completed">منجزة</string>
+    <string name="status_pending">غير منجزة</string>
+</resources>
